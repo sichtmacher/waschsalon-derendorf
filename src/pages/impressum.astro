@@ -4,38 +4,38 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title="Impressum | Waschsalon Derendorf" description="Impressum des Waschsalon Derendorf gemaess DDG ss5.">
   <div class="max-w-2xl mx-auto px-4 py-12">
-    <h1 class="text-3xl font-bold mb-8" style={`color: var(--color-text);`}>Impressum</h1>
+    <h1 class="text-3xl font-bold mb-8" style={`color: var(--color-text); font-family: var(--font-heading), var(--font-body), sans-serif;`}>Impressum</h1>
 
-    <div class="space-y-6 leading-relaxed" style="color: #4B5563;">
+    <div class="space-y-6 leading-relaxed" style={`color: var(--color-text-muted);`}>
 
       <section>
-        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>Angaben gemaess DDG &sect;5</h2>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text); font-family: var(--font-heading), var(--font-body), sans-serif;`}>Angaben gemaess DDG &sect;5</h2>
         <p>[Vor- und Nachname des Betreibers]</p>
         <p>Muensterstr. 88</p>
         <p>40625 Duesseldorf</p>
       </section>
 
       <section>
-        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>Kontakt</h2>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text); font-family: var(--font-heading), var(--font-body), sans-serif;`}>Kontakt</h2>
         <p>Telefon: [Telefonnummer folgt]</p>
-        <p>E-Mail: <a href="mailto:info@waschsalon-derendorf.de" class="underline" style={`color: var(--color-brand);`}>info@waschsalon-derendorf.de</a></p>
+        <p>E-Mail: <a href="mailto:info@waschsalon-derendorf.de" class="underline transition-colors" style={`color: var(--color-brand);`}>info@waschsalon-derendorf.de</a></p>
       </section>
 
       <section>
-        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>Handelsregister</h2>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text); font-family: var(--font-heading), var(--font-body), sans-serif;`}>Handelsregister</h2>
         <p>[Entfaellt oder: Registergericht, HRB-Nummer eintragen]</p>
       </section>
 
       <section>
-        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>Umsatzsteuer-ID</h2>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text); font-family: var(--font-heading), var(--font-body), sans-serif;`}>Umsatzsteuer-ID</h2>
         <p>[Entfaellt oder: USt-IdNr. gemaess &sect;27a UStG eintragen]</p>
       </section>
 
       <section>
-        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>EU-Streitschlichtung</h2>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text); font-family: var(--font-heading), var(--font-body), sans-serif;`}>EU-Streitschlichtung</h2>
         <p>
           Die Europaeische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
-          <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" class="underline" style={`color: var(--color-brand);`}>
+          <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" class="underline transition-colors" style={`color: var(--color-brand);`}>
             https://ec.europa.eu/consumers/odr/
           </a>
         </p>
@@ -43,7 +43,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </section>
 
       <section>
-        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text); font-family: var(--font-heading), var(--font-body), sans-serif;`}>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
         <p>
           Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
           Verbraucherschlichtungsstelle teilzunehmen.
@@ -53,7 +53,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
 
     <div class="mt-12">
-      <a href="/" class="underline" style={`color: var(--color-brand);`}>&larr; Zurueck zur Startseite</a>
+      <a href="/" class="inline-flex items-center gap-1 transition-colors" style={`color: var(--color-brand);`}>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        Zurueck zur Startseite
+      </a>
     </div>
   </div>
 </BaseLayout>

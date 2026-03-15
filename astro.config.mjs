@@ -12,8 +12,13 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.google(),
-      name: "Inter",
+      name: "Nunito",
       cssVariable: "--font-body",
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Baloo 2",
+      cssVariable: "--font-heading",
     },
   ],
   integrations: [sitemap()],

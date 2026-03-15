@@ -7,16 +7,22 @@ const { address } = Astro.props;
 const mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(address)}&output=embed`;
 ---
 
-<div id="map-container" class="relative w-full aspect-video rounded-lg overflow-hidden" style={`background-color: var(--color-surface);`}>
+<div id="map-container" class="relative w-full aspect-video overflow-hidden" style={`background-color: var(--color-surface);`}>
   <div id="map-placeholder" class="flex flex-col items-center justify-center h-full p-6 text-center">
-    <p class="mb-2" style="color: #6B7280;">Karte wird von Google Maps geladen.</p>
-    <p class="text-sm mb-4" style="color: #9CA3AF;">Beim Laden werden Daten an Google uebertragen.</p>
+    <div class="mb-3 w-12 h-12 rounded-full flex items-center justify-center" style={`background-color: var(--color-brand-light);`}>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style={`stroke: var(--color-brand);`}>
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+        <circle cx="12" cy="10" r="3" />
+      </svg>
+    </div>
+    <p class="mb-1 font-medium" style={`color: var(--color-text);`}>Karte wird von Google Maps geladen.</p>
+    <p class="text-sm mb-4" style={`color: var(--color-text-muted);`}>Beim Laden werden Daten an Google uebertragen.</p>
     <button
       id="load-map-btn"
-      class="px-6 py-2 text-white rounded-lg transition-colors cursor-pointer"
+      class="px-6 py-2.5 text-white rounded-xl font-medium transition-all cursor-pointer shadow-md hover:shadow-lg"
       style={`background-color: var(--color-brand);`}
-      onmouseover="this.style.opacity='0.9'"
-      onmouseout="this.style.opacity='1'"
+      onmouseover="this.style.backgroundColor='#0E7490'"
+      onmouseout="this.style.backgroundColor='#0891B2'"
     >
       Karte laden
     </button>

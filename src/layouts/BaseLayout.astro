@@ -15,21 +15,22 @@ const { title = "Waschsalon Derendorf", description } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <Font cssVariable="--font-body" preload />
+    <Font cssVariable="--font-heading" preload />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <slot name="head" />
   </head>
-  <body class="font-body bg-white" style={`color: var(--color-text);`}>
+  <body class="font-body" style={`color: var(--color-text); background-color: #FAFFFE;`}>
     <main>
       <slot />
     </main>
 
-    <footer class="py-8 text-center text-sm" style="color: #9CA3AF;">
+    <footer class="py-8 text-center text-sm" style={`color: var(--color-text-muted);`}>
       <nav class="flex justify-center gap-4">
-        <a href="/impressum" class="hover:underline" style="color: #9CA3AF;">Impressum</a>
-        <span aria-hidden="true">|</span>
-        <a href="/datenschutz" class="hover:underline" style="color: #9CA3AF;">Datenschutz</a>
+        <a href="/impressum" class="hover:underline transition-colors" style={`color: var(--color-text-muted);`}>Impressum</a>
+        <span aria-hidden="true">&middot;</span>
+        <a href="/datenschutz" class="hover:underline transition-colors" style={`color: var(--color-text-muted);`}>Datenschutz</a>
       </nav>
     </footer>
   </body>

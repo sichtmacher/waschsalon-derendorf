@@ -98,7 +98,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Domain, NAP & Coming Soon | 0/2 | Not started | - |
+| 1. Domain, NAP & Coming Soon | 1/2 | In progress | - |
 | 2. Website Launch | 0/TBD | Not started | - |
 | 3. Google Business Profile | 0/TBD | Not started | - |
 | 4. Social Media & Pre-Opening Content | 0/TBD | Not started | - |

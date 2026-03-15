@@ -30,7 +30,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Google Search Console ist eingerichtet und die Domain ist zur Indexierung eingesendet
   3. Ein NAP-Dokument (Name, Adresse, Telefon in exaktem Format) existiert als interne Referenz für alle Plattform-Registrierungen
   4. Netlify-Deployment ist konfiguriert und neue Commits erscheinen automatisch live
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Astro 6 project, configure Tailwind v4 + Fonts API + Netlify + SEO basics + NAP document
+- [ ] 01-02-PLAN.md — Build all pages (Coming-Soon, Impressum, Datenschutz) with GoogleMap component + visual verification
 
 ### Phase 2: Website Launch
 **Goal**: Vollständige, rechtskonforme und SEO-optimierte Website ist live — jede Frage eines potenziellen Kunden wird beantwortet
@@ -95,7 +98,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Domain, NAP & Coming Soon | 0/TBD | Not started | - |
+| 1. Domain, NAP & Coming Soon | 0/2 | Not started | - |
 | 2. Website Launch | 0/TBD | Not started | - |
 | 3. Google Business Profile | 0/TBD | Not started | - |
 | 4. Social Media & Pre-Opening Content | 0/TBD | Not started | - |

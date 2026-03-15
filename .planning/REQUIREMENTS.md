@@ -16,7 +16,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **WEB-05**: Mobile-first responsives Design
 - [ ] **WEB-06**: LocalBusiness JSON-LD Schema Markup
 - [ ] **WEB-07**: SEO-Grundlagen (Meta Tags, Sitemap, robots.txt, self-hosted Fonts)
-- [ ] **WEB-08**: Coming-Soon-Seite vor Eröffnung (SEO-Vorlauf starten)
+- [x] **WEB-08**: Coming-Soon-Seite vor Eröffnung (SEO-Vorlauf starten)
 - [ ] **WEB-09**: Fotogalerie des Salons (nach Einrichtung)
 - [ ] **WEB-10**: FAQ-Bereich mit häufigen Fragen
 
@@ -78,7 +78,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | WEB-05 | Phase 2 | Pending |
 | WEB-06 | Phase 2 | Pending |
 | WEB-07 | Phase 2 | Pending |
-| WEB-08 | Phase 1 | Pending |
+| WEB-08 | Phase 1 | Complete |
 | WEB-09 | Phase 6 | Pending |
 | WEB-10 | Phase 2 | Pending |
 | GBP-01 | Phase 3 | Pending |

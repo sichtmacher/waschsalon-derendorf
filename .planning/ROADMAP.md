@@ -12,7 +12,7 @@ Aufbau einer vollständigen digitalen Präsenz für einen SB-Waschsalon in Düss
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Domain, NAP & Coming Soon** - SEO-Uhr starten, kanonische NAP-Daten festlegen, erste indexierbare Seite online bringen
+- [x] **Phase 1: Domain, NAP & Coming Soon** - SEO-Uhr starten, kanonische NAP-Daten festlegen, erste indexierbare Seite online bringen (completed 2026-03-15)
 - [ ] **Phase 2: Website Launch** - Vollständige Astro-Website mit allen Infos, DSGVO-Compliance, Schema Markup
 - [ ] **Phase 3: Google Business Profile** - GBP einrichten, verifizieren und vollständig optimieren
 - [ ] **Phase 4: Social Media & Pre-Opening Content** - Alle Profile aufsetzen, 6+ Teaser-Posts, nachhaltigen Rhythmus etablieren
@@ -98,7 +98,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Domain, NAP & Coming Soon | 1/2 | In progress | - |
+| 1. Domain, NAP & Coming Soon | 2/2 | Complete   | 2026-03-15 |
 | 2. Website Launch | 0/TBD | Not started | - |
 | 3. Google Business Profile | 0/TBD | Not started | - |
 | 4. Social Media & Pre-Opening Content | 0/TBD | Not started | - |

@@ -71,34 +71,34 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| WEB-01 | — | Pending |
-| WEB-02 | — | Pending |
-| WEB-03 | — | Pending |
-| WEB-04 | — | Pending |
-| WEB-05 | — | Pending |
-| WEB-06 | — | Pending |
-| WEB-07 | — | Pending |
-| WEB-08 | — | Pending |
-| WEB-09 | — | Pending |
-| WEB-10 | — | Pending |
-| GBP-01 | — | Pending |
-| GBP-02 | — | Pending |
-| GBP-03 | — | Pending |
-| GBP-04 | — | Pending |
-| GBP-05 | — | Pending |
-| SOC-01 | — | Pending |
-| SOC-02 | — | Pending |
-| SOC-03 | — | Pending |
-| SOC-04 | — | Pending |
-| SOC-05 | — | Pending |
-| ADS-01 | — | Pending |
-| ADS-02 | — | Pending |
+| WEB-01 | Phase 2 | Pending |
+| WEB-02 | Phase 2 | Pending |
+| WEB-03 | Phase 2 | Pending |
+| WEB-04 | Phase 2 | Pending |
+| WEB-05 | Phase 2 | Pending |
+| WEB-06 | Phase 2 | Pending |
+| WEB-07 | Phase 2 | Pending |
+| WEB-08 | Phase 1 | Pending |
+| WEB-09 | Phase 6 | Pending |
+| WEB-10 | Phase 2 | Pending |
+| GBP-01 | Phase 3 | Pending |
+| GBP-02 | Phase 3 | Pending |
+| GBP-03 | Phase 3 | Pending |
+| GBP-04 | Phase 3 | Pending |
+| GBP-05 | Phase 3 | Pending |
+| SOC-01 | Phase 4 | Pending |
+| SOC-02 | Phase 4 | Pending |
+| SOC-03 | Phase 4 | Pending |
+| SOC-04 | Phase 4 | Pending |
+| SOC-05 | Phase 4 | Pending |
+| ADS-01 | Phase 5 | Pending |
+| ADS-02 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 22 total
-- Mapped to phases: 0
-- Unmapped: 22 ⚠️
+- Mapped to phases: 22
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-15*
-*Last updated: 2026-03-15 after initial definition*
+*Last updated: 2026-03-15 after roadmap creation — all 22 requirements mapped*

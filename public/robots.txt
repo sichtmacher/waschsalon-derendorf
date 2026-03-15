@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://waschsalon-derendorf.de/sitemap-index.xml

@@ -1,0 +1,36 @@
+---
+import { Font } from "astro:assets";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "Waschsalon Derendorf", description } = Astro.props;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Font cssVariable="--font-body" preload />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <slot name="head" />
+  </head>
+  <body class="font-body bg-white" style={`color: var(--color-text);`}>
+    <main>
+      <slot />
+    </main>
+
+    <footer class="py-8 text-center text-sm" style="color: #9CA3AF;">
+      <nav class="flex justify-center gap-4">
+        <a href="/impressum" class="hover:underline" style="color: #9CA3AF;">Impressum</a>
+        <span aria-hidden="true">|</span>
+        <a href="/datenschutz" class="hover:underline" style="color: #9CA3AF;">Datenschutz</a>
+      </nav>
+    </footer>
+  </body>
+</html>

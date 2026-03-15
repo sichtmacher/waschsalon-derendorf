@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Impressum | Waschsalon Derendorf" description="Impressum des Waschsalon Derendorf gemaess DDG ss5.">
+  <div class="max-w-2xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-8" style={`color: var(--color-text);`}>Impressum</h1>
+
+    <div class="space-y-6 leading-relaxed" style="color: #4B5563;">
+
+      <section>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>Angaben gemaess DDG &sect;5</h2>
+        <p>[Vor- und Nachname des Betreibers]</p>
+        <p>Muensterstr. 88</p>
+        <p>40625 Duesseldorf</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>Kontakt</h2>
+        <p>Telefon: [Telefonnummer folgt]</p>
+        <p>E-Mail: <a href="mailto:info@waschsalon-derendorf.de" class="underline" style={`color: var(--color-brand);`}>info@waschsalon-derendorf.de</a></p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>Handelsregister</h2>
+        <p>[Entfaellt oder: Registergericht, HRB-Nummer eintragen]</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>Umsatzsteuer-ID</h2>
+        <p>[Entfaellt oder: USt-IdNr. gemaess &sect;27a UStG eintragen]</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>EU-Streitschlichtung</h2>
+        <p>
+          Die Europaeische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+          <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" class="underline" style={`color: var(--color-brand);`}>
+            https://ec.europa.eu/consumers/odr/
+          </a>
+        </p>
+        <p class="mt-2">Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold mb-2" style={`color: var(--color-text);`}>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+        <p>
+          Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+          Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+      </section>
+
+    </div>
+
+    <div class="mt-12">
+      <a href="/" class="underline" style={`color: var(--color-brand);`}>&larr; Zurueck zur Startseite</a>
+    </div>
+  </div>
+</BaseLayout>

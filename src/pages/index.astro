@@ -1,12 +1,45 @@
 ---
-// Placeholder — replaced by Plan 02
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GoogleMap from "../components/GoogleMap.astro";
 ---
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <title>Waschsalon Derendorf</title>
-  </head>
-  <body>
-    <p>Coming soon</p>
-  </body>
-</html>
+
+<BaseLayout description="Waschsalon Derendorf -- Dein neuer SB-Waschsalon in Duesseldorf. Eroeffnung 2026.">
+  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+    <div class="max-w-xl w-full text-center space-y-8">
+
+      <header class="space-y-3">
+        <h1 class="text-4xl sm:text-5xl font-bold tracking-tight" style={`color: var(--color-text);`}>
+          Waschsalon Derendorf
+        </h1>
+        <p class="text-lg sm:text-xl" style="color: #4B5563;">
+          Dein neuer SB-Waschsalon in Derendorf
+        </p>
+        <p class="text-sm" style="color: #9CA3AF;">
+          Self-service laundromat &mdash; Opening 2026
+        </p>
+      </header>
+
+      <div class="space-y-4 text-base" style="color: #4B5563;">
+        <div class="py-4 px-6 rounded-lg" style={`background-color: var(--color-brand-light);`}>
+          <p class="font-medium" style={`color: var(--color-text);`}>Eroeffnung 2026</p>
+        </div>
+
+        <div class="space-y-1">
+          <p>Muensterstr. 88</p>
+          <p>40625 Duesseldorf</p>
+        </div>
+
+        <p>
+          <a href="mailto:info@waschsalon-derendorf.de" class="underline hover:no-underline" style={`color: var(--color-brand);`}>
+            info@waschsalon-derendorf.de
+          </a>
+        </p>
+      </div>
+
+      <div class="w-full">
+        <GoogleMap address="Muensterstr. 88, 40625 Duesseldorf" />
+      </div>
+
+    </div>
+  </div>
+</BaseLayout>

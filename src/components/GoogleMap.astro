@@ -1,0 +1,44 @@
+---
+interface Props {
+  address: string;
+}
+
+const { address } = Astro.props;
+const mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(address)}&output=embed`;
+---
+
+<div id="map-container" class="relative w-full aspect-video rounded-lg overflow-hidden" style={`background-color: var(--color-surface);`}>
+  <div id="map-placeholder" class="flex flex-col items-center justify-center h-full p-6 text-center">
+    <p class="mb-2" style="color: #6B7280;">Karte wird von Google Maps geladen.</p>
+    <p class="text-sm mb-4" style="color: #9CA3AF;">Beim Laden werden Daten an Google uebertragen.</p>
+    <button
+      id="load-map-btn"
+      class="px-6 py-2 text-white rounded-lg transition-colors cursor-pointer"
+      style={`background-color: var(--color-brand);`}
+      onmouseover="this.style.opacity='0.9'"
+      onmouseout="this.style.opacity='1'"
+    >
+      Karte laden
+    </button>
+  </div>
+</div>
+
+<script define:vars={{ mapUrl }}>
+  document.getElementById('load-map-btn')?.addEventListener('click', () => {
+    const container = document.getElementById('map-container');
+    if (!container) return;
+    const iframe = document.createElement('iframe');
+    iframe.src = mapUrl;
+    iframe.width = '100%';
+    iframe.height = '100%';
+    iframe.style.border = '0';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.allowFullscreen = true;
+    iframe.loading = 'lazy';
+    iframe.referrerPolicy = 'no-referrer-when-downgrade';
+    container.innerHTML = '';
+    container.appendChild(iframe);
+  });
+</script>

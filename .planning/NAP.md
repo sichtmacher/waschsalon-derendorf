@@ -7,11 +7,10 @@ Waschsalon Derendorf
 
 ## Adresse
 Muensterstr. 88
-40625 Duesseldorf
+40477 Duesseldorf
 
 ## Telefon
-+49 211 XXXXXXX
-<!-- TODO: Telefonnummer nachtragen sobald festgelegt -->
++49 211 54202673
 
 ## Website
 https://waschsalon-derendorf.de
@@ -21,7 +20,7 @@ info@waschsalon-derendorf.de
 
 ---
 
-**Verwendung:** Dieses Dokument ist die einzige Referenz fuer Name, Adresse und Telefon. Jede Plattform-Registrierung (Google Business Profile, Instagram, Facebook, Branchenverzeichnisse) MUSS exakt diese Schreibweise verwenden. Abweichungen (z.B. "Muensterstrasse" statt "Muensterstr.", "D-40625" statt "40625") schaden der lokalen SEO-Konsistenz.
+**Verwendung:** Dieses Dokument ist die einzige Referenz fuer Name, Adresse und Telefon. Jede Plattform-Registrierung (Google Business Profile, Instagram, Facebook, Branchenverzeichnisse) MUSS exakt diese Schreibweise verwenden. Abweichungen (z.B. "Muensterstrasse" statt "Muensterstr.", "D-40477" statt "40477") schaden der lokalen SEO-Konsistenz.
 
 *Erstellt: 2026-03-15*
-*Zuletzt aktualisiert: 2026-03-15*
+*Zuletzt aktualisiert: 2026-04-16*

@@ -12,13 +12,12 @@ Wer in Düsseldorf nach einem Waschsalon sucht, findet diesen — online, auf Go
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Website mit Öffnungszeiten, Preisen, Adresse und Anfahrt — Validated in Phase 2: Website Launch
+- [x] SEO-Optimierung für lokale Suchen ("Waschsalon Düsseldorf", "Waschsalon Derendorf") — Validated in Phase 2 (LocalBusiness JSON-LD, self-hosted fonts, <3s CWV)
+- [x] Professionelles, vertrauenswürdiges Design — Validated in Phase 2 (WCAG 2.2 AA, 50/50 E2E GREEN, LHCI Perf ≥0.99)
 
 ### Active
 
-- [ ] Website mit Öffnungszeiten, Preisen, Adresse und Anfahrt
-- [ ] SEO-Optimierung für lokale Suchen ("Waschsalon Düsseldorf", "Waschsalon Derendorf")
-- [ ] Professionelles, vertrauenswürdiges Design
 - [ ] Google Business Profil einrichten und optimieren
 - [ ] Instagram-Profil aufsetzen (Waschsalon Derendorf)
 - [ ] Facebook-Seite erstellen
@@ -58,5 +57,9 @@ Wer in Düsseldorf nach einem Waschsalon sucht, findet diesen — online, auf Go
 | Alle 4 Plattformen (IG, FB, TikTok, Google Business) | Maximale lokale Reichweite über verschiedene Altersgruppen | — Pending |
 | Organisch + Paid Ads kombiniert | Langfristiger Aufbau + kurzfristige Reichweite zur Eröffnung | — Pending |
 
+## Current State
+
+Phase 2 complete — rechtskonforme, SEO-optimierte, performante Website live-ready. Core Web Vitals bestehen (desktop LCP 442-446ms, mobile LCP 1202-1954ms, CLS 0), LocalBusiness + FAQPage JSON-LD eingebettet, Impressum + Datenschutz DDG/DSGVO-konform, Google Maps consent-gated, Fonts self-hosted. Nächster Schritt: Google Business Profile (Phase 3).
+
 ---
-*Last updated: 2026-03-15 after initialization*
+*Last updated: 2026-04-16 after Phase 2 completion*

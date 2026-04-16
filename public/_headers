@@ -1,0 +1,20 @@
+# Security + cache headers for Netlify.
+# Source: https://docs.netlify.com/manage/routing/headers/
+# CSP intentionally omitted in Phase 2 — see 02-RESEARCH.md Open Question #3.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+
+# Astro fingerprinted assets — lang cachen
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Self-hosted font files (Astro Fonts API emits to /_fonts/, but accept both just in case)
+/_fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable

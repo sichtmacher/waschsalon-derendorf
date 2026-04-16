@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#0E7490"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF">Waschsalon Derendorf</text>
+  <text x="600" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" font-weight="500" fill="#E0F7FA">Münsterstr. 88 · 40477 Düsseldorf</text>
+  <text x="600" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="500" fill="#FEF3C7">Täglich 06:00 – 22:00 Uhr</text>
+</svg>

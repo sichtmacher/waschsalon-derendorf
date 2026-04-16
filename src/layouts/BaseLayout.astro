@@ -5,9 +5,17 @@ import "../styles/global.css";
 interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
 }
 
-const { title = "Waschsalon Derendorf", description } = Astro.props;
+const {
+  title = "Waschsalon Derendorf",
+  description = "Waschsalon Derendorf — dein SB-Waschsalon in Düsseldorf. Täglich 06:00 – 22:00 Uhr.",
+  ogImage = "/og-default.svg",
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://waschsalon-derendorf.de").toString();
+const ogImageURL = new URL(ogImage, Astro.site ?? "https://waschsalon-derendorf.de").toString();
 ---
 
 <html lang="de">
@@ -18,16 +26,30 @@ const { title = "Waschsalon Derendorf", description } = Astro.props;
     <Font cssVariable="--font-heading" preload />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
-    {description && <meta name="description" content={description} />}
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_DE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+
     <slot name="head" />
   </head>
   <body class="font-body" style={`color: var(--color-text); background-color: #FAFFFE;`}>
-    <main>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    <main id="main-content">
       <slot />
     </main>
 
     <footer class="py-8 text-center text-sm" style={`color: var(--color-text-muted);`}>
-      <nav class="flex justify-center gap-4">
+      <nav class="flex justify-center gap-4" aria-label="Rechtliche Hinweise">
         <a href="/impressum" class="hover:underline transition-colors" style={`color: var(--color-text-muted);`}>Impressum</a>
         <span aria-hidden="true">&middot;</span>
         <a href="/datenschutz" class="hover:underline transition-colors" style={`color: var(--color-text-muted);`}>Datenschutz</a>

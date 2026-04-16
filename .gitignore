@@ -22,3 +22,10 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# playwright / lighthouse CI artifacts
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+.lighthouseci/

@@ -13,7 +13,7 @@ Aufbau einer vollständigen digitalen Präsenz für einen SB-Waschsalon in Düss
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Domain, NAP & Coming Soon** - SEO-Uhr starten, kanonische NAP-Daten festlegen, erste indexierbare Seite online bringen (completed 2026-03-15)
-- [ ] **Phase 2: Website Launch** - Vollständige Astro-Website mit allen Infos, DSGVO-Compliance, Schema Markup
+- [x] **Phase 2: Website Launch** - Vollständige Astro-Website mit allen Infos, DSGVO-Compliance, Schema Markup (completed 2026-04-16)
 - [ ] **Phase 3: Google Business Profile** - GBP einrichten, verifizieren und vollständig optimieren
 - [ ] **Phase 4: Social Media & Pre-Opening Content** - Alle Profile aufsetzen, 6+ Teaser-Posts, nachhaltigen Rhythmus etablieren
 - [ ] **Phase 5: Paid Amplification** - Google Ads + Meta Ads zur Eröffnung schalten
@@ -51,7 +51,7 @@ Plans:
 - [x] 02-02-PLAN.md — Homepage components (StickyNav + PriceCard + FaqAccordion + 4 section wrappers) [Wave 1]
 - [x] 02-03-PLAN.md — Legal pages (Impressum with GmbH-i.G. clause + Datenschutz with Google Fonts + Videoüberwachung sections) [Wave 1]
 - [x] 02-04-PLAN.md — Homepage wire-up (index.astro + BaseLayout SEO + schema.ts impl + hero py-3 retrofit) [Wave 2]
-- [ ] 02-05-PLAN.md — Performance hardening (Netlify _headers + optional shader fallback + LHCI gate) [Wave 3]
+- [x] 02-05-PLAN.md — Performance hardening (Netlify _headers + optional shader fallback + LHCI gate) [Wave 3]
 
 ### Phase 3: Google Business Profile
 **Goal**: Der Waschsalon erscheint in Google Maps und im lokalen Pack, wenn jemand in Düsseldorf nach einem Waschsalon sucht
@@ -105,7 +105,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Domain, NAP & Coming Soon | 2/2 | Complete   | 2026-03-15 |
-| 2. Website Launch | 0/TBD | Not started | - |
+| 2. Website Launch | 5/5 | Complete   | 2026-04-16 |
 | 3. Google Business Profile | 0/TBD | Not started | - |
 | 4. Social Media & Pre-Opening Content | 0/TBD | Not started | - |
 | 5. Paid Amplification | 0/TBD | Not started | - |

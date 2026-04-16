@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-04-PLAN.md
-last_updated: "2026-04-16T13:56:49.540Z"
+stopped_at: Completed 02-05-PLAN.md
+last_updated: "2026-04-16T14:15:22.751Z"
 last_activity: 2026-04-16
 progress:
   total_phases: 6
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 7
-  completed_plans: 6
+  completed_plans: 7
   percent: 100
 ---
 
@@ -26,7 +26,7 @@ See: .planning/PROJECT.md (updated 2026-03-15)
 ## Current Position
 
 Phase: 02 (website-launch) — EXECUTING
-Plan: 4 of 5
+Plan: 5 of 5
 Status: Ready to execute
 Last activity: 2026-04-16
 
@@ -56,6 +56,7 @@ Progress: [##########] 100% (Phase 1)
 | Phase 02-website-launch P02 | 3min | 2 tasks | 7 files |
 | Phase 02-website-launch P01 | 5min | 3 tasks | 16 files |
 | Phase 02-website-launch P04 | 7min | 2 tasks | 8 files |
+| Phase 02-website-launch P05 | 14min | 3 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -84,6 +85,9 @@ Recent decisions affecting current work:
 - [Phase 02-website-launch]: [02-04]: Darkened --color-brand from #0891B2 to #0E7490 globally for WCAG 2.2 AA compliance — Phase 1 Teal failed 4.5:1 ratio on #FAFFFE body and as CTA background
 - [Phase 02-website-launch]: [02-04]: safeJson helper escapes < to \u003c in JSON-LD output (Pitfall 9 </script> break-out guard)
 - [Phase 02-website-launch]: [02-04]: Playwright chromium-mobile project uses Pixel 5 (chromium) not iPhone 13 (webkit) — respects plan 02-01's chromium-only install
+- [Phase 02-website-launch]: [02-05]: Ship prefers-reduced-motion + narrow-viewport shader fallback even when mobile LCP passed — must_haves.artifacts contract requires 'prefers-reduced-motion' + 'matchMedia' in WarpBackground.tsx; WCAG 2.2 SC 2.3.3 mandates honoring the preference
+- [Phase 02-website-launch]: [02-05]: CSP deferred from baseline _headers — Maps iframe + inline JSON-LD require differentiated frame-src/script-src; ship baseline headers now, CSP in dedicated hardening plan with report-only rollout
+- [Phase 02-website-launch]: [02-05]: Mobile LHCI config (lighthouserc.mobile.json) stays gitignored — canonical committed gate is desktop via lighthouserc.json; mobile is executor re-verification only, avoids doubling CI contract surface
 
 ### Pending Todos
 
@@ -97,6 +101,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-16T13:56:40.344Z
-Stopped at: Completed 02-04-PLAN.md
+Last session: 2026-04-16T14:15:22.749Z
+Stopped at: Completed 02-05-PLAN.md
 Resume file: None

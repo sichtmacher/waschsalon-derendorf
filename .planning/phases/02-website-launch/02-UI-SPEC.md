@@ -46,8 +46,8 @@ Declared values (all multiples of 4):
 Section vertical rhythm: mobile `py-12` (48px), desktop `py-20` (80px → uses Tailwind stock, acceptable multiple of 4).
 
 **Exceptions:**
-- **Touch targets**: Route-planen CTA and Accordion headers enforce `min-height: 44px` (WCAG 2.5.5 AAA) — satisfied via `py-2.5` + `px-5` on buttons (already used in `GoogleMap.astro` pattern).
-- **Hero glass pills** use `px-4 py-2.5` and `px-5 py-2.5` (20px / 10px) inherited from Phase 1 — locked for visual continuity with coming-soon aesthetic, no change.
+- **Touch targets**: Route-planen CTA and Accordion headers enforce `min-height: 44px` (WCAG 2.5.5 AAA) — satisfied via `py-3` + `px-5` on buttons (12px vertical, 20px horizontal; yields 44px total height at 20px label line-height).
+- **Hero glass pills** use `px-4 py-3` and `px-5 py-3` (16px / 12px). Phase 1 currently renders `py-2.5` (10px) which violates the 4-point scale — Phase 2 executor must replace existing hero pill padding with `py-3` (12px) to bring the coming-soon aesthetic into compliance. The 12px choice preserves the visual weight closest to the existing 10px rendering and meets the 44px touch-target guideline on the mailto pill.
 
 ---
 

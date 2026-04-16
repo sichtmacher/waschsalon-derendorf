@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 2 UI-SPEC approved
-last_updated: "2026-04-16T13:42:16.936Z"
+stopped_at: Completed 02-02-PLAN.md (parallel wave 1)
+last_updated: "2026-04-16T13:44:22.178Z"
 last_activity: 2026-04-16 -- Phase 02 execution started
 progress:
   total_phases: 6
   completed_phases: 1
   total_plans: 7
-  completed_plans: 3
+  completed_plans: 4
   percent: 100
 ---
 
@@ -53,6 +53,7 @@ Progress: [##########] 100% (Phase 1)
 
 *Updated after each plan completion*
 | Phase 02 P03 | 2 | 2 tasks | 2 files |
+| Phase 02-website-launch P02 | 3min | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -71,6 +72,9 @@ Recent decisions affecting current work:
 - [01-02]: Teal/Cyan-Farbschema statt Original-Blau fuer freundlichere, markantere Optik
 - [Phase 02]: [02-03]: Impressum operator address is Heyestr. 152 (Laura Maskos natural person), NOT Münsterstr. 88 — Pitfall 3 guardrail
 - [Phase 02]: [02-03]: Datenschutz extended with Google Fonts self-hosted clause (Pitfall 7) + Videoüberwachung Art. 6 Abs. 1 lit. f with 72h deletion (Pitfall 8 / D-19)
+- [Phase 02-website-launch]: [02-02]: Zero-hydration StickyNav via IntersectionObserver sentinel pattern (no Astro island)
+- [Phase 02-website-launch]: [02-02]: Native <details name='faq-group'> for single-open accordion behavior (zero JS state machine)
+- [Phase 02-website-launch]: [02-02]: Every German string copied verbatim from UI-SPEC Copywriting Contract — no paraphrasing, locked prices 5,00€/10,00€/1,80€
 
 ### Pending Todos
 
@@ -84,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-16T13:06:15.468Z
-Stopped at: Phase 2 UI-SPEC approved
-Resume file: .planning/phases/02-website-launch/02-UI-SPEC.md
+Last session: 2026-04-16T13:44:22.175Z
+Stopped at: Completed 02-02-PLAN.md (parallel wave 1)
+Resume file: None

@@ -11,7 +11,9 @@ export default defineConfig({
   },
   projects: [
     { name: 'chromium-desktop', use: { ...devices['Desktop Chrome'] } },
-    { name: 'chromium-mobile', use: { ...devices['iPhone 13'] } },
+    // Mobile project uses Pixel 5 (Chromium-based) since plan 02-01 installed
+    // chromium only — iPhone 13 would pull webkit which is deliberately skipped.
+    { name: 'chromium-mobile', use: { ...devices['Pixel 5'] } },
   ],
   webServer: {
     command: 'npm run build && npm run preview',

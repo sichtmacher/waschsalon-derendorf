@@ -13,5 +13,7 @@ test('loads iframe on click', async ({ page }) => {
   const iframe = page.locator('iframe[src*="google.com/maps"]');
   await expect(iframe).toHaveCount(1);
   const src = await iframe.getAttribute('src');
-  expect(src).toContain('Münsterstr');
+  // iframe src is URL-encoded via encodeURIComponent — decode before asserting
+  // that the destination address is preserved (Münsterstr. 88, 40477 Düsseldorf).
+  expect(decodeURIComponent(src ?? '')).toContain('Münsterstr');
 });

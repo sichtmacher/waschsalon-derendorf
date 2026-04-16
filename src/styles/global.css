@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #0891B2;
-  --color-brand-dark: #0E7490;
+  /* Teal brand tokens. Darkened from original #0891B2 (Phase 1) to meet
+     WCAG 2.2 AA 4.5:1 on both white text on brand-bg and brand text on
+     surface-bg (#FAFFFE). #0E7490 gives ~5.6:1 in both directions.
+     Hover state dips to --color-brand-dark (#155E75) for clear affordance. */
+  --color-brand: #0E7490;
+  --color-brand-dark: #155E75;
   --color-brand-light: #E0F7FA;
   --color-accent: #F59E0B;
   --color-accent-light: #FEF3C7;

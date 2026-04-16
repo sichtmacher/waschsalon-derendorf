@@ -1,23 +1,54 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import GoogleMap from "../components/GoogleMap.astro";
 import WarpBackground from "../components/WarpBackground.tsx";
+import StickyNav from "../components/StickyNav.astro";
+import OpeningHoursSection from "../components/sections/OpeningHoursSection.astro";
+import PricingSection from "../components/sections/PricingSection.astro";
+import FaqSection from "../components/sections/FaqSection.astro";
+import LocationSection from "../components/sections/LocationSection.astro";
+import { localBusinessJsonLd, faqPageJsonLd } from "../lib/schema";
+import { faqs } from "../data/faq";
+
+const business = localBusinessJsonLd({
+  name: "Waschsalon Derendorf",
+  streetAddress: "Münsterstr. 88",
+  postalCode: "40477",
+  addressLocality: "Düsseldorf",
+  addressCountry: "DE",
+  telephone: "+49 211 54202673",
+  url: "https://waschsalon-derendorf.de",
+  email: "info@waschsalon-derendorf.de",
+  priceRange: "€",
+});
+const faq = faqPageJsonLd(faqs);
+
+const routeHref =
+  "https://www.google.com/maps/dir/?api=1&destination=" +
+  encodeURIComponent("Münsterstr. 88, 40477 Düsseldorf");
+
+const description =
+  "Waschsalon Derendorf — dein SB-Waschsalon in Düsseldorf. Täglich 06:00 – 22:00 Uhr. Waschmaschinen ab 5 €, Trockner 1,80 € pro 10 Minuten. Münsterstr. 88, 40477 Düsseldorf.";
 ---
 
-<BaseLayout description="Waschsalon Derendorf -- Dein neuer SB-Waschsalon in Duesseldorf. Eroeffnung 2026.">
+<BaseLayout
+  title="Waschsalon Derendorf — Dein SB-Waschsalon in Düsseldorf"
+  description={description}
+>
+  <script slot="head" type="application/ld+json" is:inline set:html={business}></script>
+  <script slot="head" type="application/ld+json" is:inline set:html={faq}></script>
 
-  <!-- Full-page hero with shader background -->
-  <section class="relative min-h-screen overflow-hidden">
+  <!-- Hero: fullscreen shader + glass pills, all key info above-the-fold -->
+  <section class="relative min-h-[100svh] overflow-hidden">
     <div class="absolute inset-0">
       <WarpBackground client:load />
     </div>
 
-    <div class="relative z-10 px-4 py-12 sm:py-16 min-h-screen flex flex-col items-center justify-center">
-      <div class="max-w-xl mx-auto text-center space-y-6">
+    <div class="relative z-10 px-4 py-12 sm:py-16 min-h-[100svh] flex flex-col items-center justify-center">
+      <div class="max-w-2xl mx-auto text-center space-y-6">
 
         <!-- Washer icon -->
-        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <rect x="3" y="2" width="18" height="20" rx="2" />
             <circle cx="12" cy="13" r="5" />
             <path d="M9.5 12.5c1 -1 2.5 -1 3.5 0s2.5 1 3.5 0" opacity="0.7" />
@@ -28,50 +59,70 @@ import WarpBackground from "../components/WarpBackground.tsx";
 
         <!-- Title -->
         <div>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-2" style="font-family: var(--font-heading), var(--font-body), sans-serif;">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white tracking-tight mb-2" style="font-family: var(--font-heading), var(--font-body), sans-serif; line-height: 1.1;">
             Waschsalon Derendorf
           </h1>
-          <p class="text-lg sm:text-xl text-white/85" style="font-family: var(--font-heading), var(--font-body), sans-serif;">
+          <p class="text-lg sm:text-xl text-white/90" style="font-family: var(--font-body), sans-serif;">
             Dein neuer SB-Waschsalon in Derendorf
           </p>
         </div>
 
-        <!-- Opening badge -->
-        <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-white font-semibold text-lg" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); font-family: var(--font-heading), var(--font-body), sans-serif;">
-          <span role="img" aria-label="Feier">&#127881;</span>
-          Eroeffnung 2026
-          <span role="img" aria-label="Feier">&#127881;</span>
+        <!-- Eröffnung 2026 badge (dezent, NO emojis per D-08 / UI-SPEC line 147) -->
+        <div
+          class="inline-flex items-center gap-2 px-5 py-3 rounded-full text-white font-semibold text-base sm:text-lg"
+          style="background: rgba(255,255,255,0.18); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid var(--color-accent); font-family: var(--font-heading), var(--font-body), sans-serif;"
+        >
+          <span class="inline-block w-2 h-2 rounded-full" style="background-color: var(--color-accent);" aria-hidden="true"></span>
+          Eröffnung 2026
         </div>
 
-        <!-- Info row: Address + Email -->
-        <div class="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
-          <div class="flex items-center gap-2 px-4 py-2.5 rounded-xl text-white/90 text-sm" style="background: rgba(255,255,255,0.12); backdrop-filter: blur(8px);">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
-            Muensterstr. 88, 40477 Duesseldorf
+        <!-- Above-the-fold info pills: Adresse + Öffnungszeiten + Preis-Teaser (WEB-01 / Success Criterion #1) -->
+        <div class="flex flex-wrap gap-3 justify-center items-center pt-2">
+          <div class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-white/95 text-sm font-semibold" style="background: rgba(255,255,255,0.14); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Münsterstr. 88, 40477 Düsseldorf
           </div>
-          <a href="mailto:info@waschsalon-derendorf.de" class="flex items-center gap-2 px-4 py-2.5 rounded-xl text-white/90 text-sm hover:text-white transition-colors" style="background: rgba(255,255,255,0.12); backdrop-filter: blur(8px);">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect width="20" height="16" x="2" y="4" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
-            info@waschsalon-derendorf.de
+          <div class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-white/95 text-sm font-semibold" style="background: rgba(255,255,255,0.14); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Täglich 06:00 – 22:00 Uhr
+          </div>
+          <div class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-white/95 text-sm font-semibold" style="background: rgba(255,255,255,0.14); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            Waschen ab 5,00 €
+          </div>
+        </div>
+
+        <!-- CTAs: Route planen (primary, Teal) + Zu den Preisen (secondary, ghost) -->
+        <div class="flex flex-col sm:flex-row gap-3 justify-center items-center pt-4">
+          <a
+            href={routeHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-white shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5"
+            style="background-color: var(--color-brand); min-height: 44px;"
+            onmouseover="this.style.backgroundColor='#155E75'"
+            onmouseout="this.style.backgroundColor='#0E7490'"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            Route planen
+          </a>
+          <a
+            href="#preise"
+            class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-white transition-colors"
+            style="background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.30); min-height: 44px;"
+          >
+            Zu den Preisen
           </a>
         </div>
 
-        <p class="text-xs text-white/50 pt-1">
-          Self-service laundromat &mdash; Opening 2026
-        </p>
-
-      </div>
-
-      <!-- Map at bottom of hero -->
-      <div class="w-full max-w-lg mx-auto mt-8 rounded-2xl overflow-hidden shadow-lg" style="border: 1px solid rgba(255,255,255,0.2);">
-        <GoogleMap address="Muensterstr. 88, 40477 Duesseldorf" />
       </div>
     </div>
   </section>
 
+  <StickyNav />
+
+  <OpeningHoursSection />
+  <PricingSection />
+  <FaqSection />
+  <LocationSection />
 </BaseLayout>

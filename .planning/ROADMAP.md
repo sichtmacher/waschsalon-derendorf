@@ -50,7 +50,7 @@ Plans:
 - [x] 02-01-PLAN.md — Test infrastructure (Playwright + axe + LHCI) + FAQ data + schema interface contracts [Wave 0]
 - [x] 02-02-PLAN.md — Homepage components (StickyNav + PriceCard + FaqAccordion + 4 section wrappers) [Wave 1]
 - [x] 02-03-PLAN.md — Legal pages (Impressum with GmbH-i.G. clause + Datenschutz with Google Fonts + Videoüberwachung sections) [Wave 1]
-- [ ] 02-04-PLAN.md — Homepage wire-up (index.astro + BaseLayout SEO + schema.ts impl + hero py-3 retrofit) [Wave 2]
+- [x] 02-04-PLAN.md — Homepage wire-up (index.astro + BaseLayout SEO + schema.ts impl + hero py-3 retrofit) [Wave 2]
 - [ ] 02-05-PLAN.md — Performance hardening (Netlify _headers + optional shader fallback + LHCI gate) [Wave 3]
 
 ### Phase 3: Google Business Profile

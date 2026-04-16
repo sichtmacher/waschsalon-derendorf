@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-04-16T13:44:56.165Z"
+stopped_at: Completed 02-04-PLAN.md
+last_updated: "2026-04-16T13:56:49.540Z"
 last_activity: 2026-04-16
 progress:
   total_phases: 6
   completed_phases: 1
   total_plans: 7
-  completed_plans: 5
+  completed_plans: 6
   percent: 100
 ---
 
@@ -26,7 +26,7 @@ See: .planning/PROJECT.md (updated 2026-03-15)
 ## Current Position
 
 Phase: 02 (website-launch) — EXECUTING
-Plan: 2 of 5
+Plan: 4 of 5
 Status: Ready to execute
 Last activity: 2026-04-16
 
@@ -55,6 +55,7 @@ Progress: [##########] 100% (Phase 1)
 | Phase 02 P03 | 2 | 2 tasks | 2 files |
 | Phase 02-website-launch P02 | 3min | 2 tasks | 7 files |
 | Phase 02-website-launch P01 | 5min | 3 tasks | 16 files |
+| Phase 02-website-launch P04 | 7min | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -80,6 +81,9 @@ Recent decisions affecting current work:
 - [Phase 02-01]: src/lib/schema.ts publishes signature-first contracts with throwing stubs; real impl deferred to 02-04
 - [Phase 02-01]: JSON-LD @type is LaundryService (not generic LocalBusiness) to enable laundry-specific rich results
 - [Phase 02-01]: Nyquist validation: 9 E2E specs authored RED in Wave 0 go GREEN as Waves 1-3 ship features
+- [Phase 02-website-launch]: [02-04]: Darkened --color-brand from #0891B2 to #0E7490 globally for WCAG 2.2 AA compliance — Phase 1 Teal failed 4.5:1 ratio on #FAFFFE body and as CTA background
+- [Phase 02-website-launch]: [02-04]: safeJson helper escapes < to \u003c in JSON-LD output (Pitfall 9 </script> break-out guard)
+- [Phase 02-website-launch]: [02-04]: Playwright chromium-mobile project uses Pixel 5 (chromium) not iPhone 13 (webkit) — respects plan 02-01's chromium-only install
 
 ### Pending Todos
 
@@ -93,6 +97,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-16T13:44:48.804Z
-Stopped at: Completed 02-01-PLAN.md
+Last session: 2026-04-16T13:56:40.344Z
+Stopped at: Completed 02-04-PLAN.md
 Resume file: None

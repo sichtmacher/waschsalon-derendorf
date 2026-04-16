@@ -11,8 +11,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **WEB-01**: Startseite mit Adresse, Öffnungszeiten und Preisliste
 - [ ] **WEB-02**: Kontaktinfo & Anfahrt mit Google Maps (Click-to-load, DSGVO-konform)
-- [ ] **WEB-03**: Impressum (rechtlich korrekt für gewerbliche Seite)
-- [ ] **WEB-04**: Datenschutzerklärung (DSGVO-konform)
+- [x] **WEB-03**: Impressum (rechtlich korrekt für gewerbliche Seite)
+- [x] **WEB-04**: Datenschutzerklärung (DSGVO-konform)
 - [ ] **WEB-05**: Mobile-first responsives Design
 - [ ] **WEB-06**: LocalBusiness JSON-LD Schema Markup
 - [ ] **WEB-07**: SEO-Grundlagen (Meta Tags, Sitemap, robots.txt, self-hosted Fonts)
@@ -73,8 +73,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | WEB-01 | Phase 2 | Pending |
 | WEB-02 | Phase 2 | Pending |
-| WEB-03 | Phase 2 | Pending |
-| WEB-04 | Phase 2 | Pending |
+| WEB-03 | Phase 2 | Complete |
+| WEB-04 | Phase 2 | Complete |
 | WEB-05 | Phase 2 | Pending |
 | WEB-06 | Phase 2 | Pending |
 | WEB-07 | Phase 2 | Pending |

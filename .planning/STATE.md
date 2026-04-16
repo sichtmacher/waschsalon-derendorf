@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
+status: executing
 stopped_at: Phase 2 UI-SPEC approved
-last_updated: "2026-04-16T13:06:15.471Z"
-last_activity: 2026-03-15 -- Plan 01-02 complete (Coming-Soon pages with shader hero)
+last_updated: "2026-04-16T13:42:16.936Z"
+last_activity: 2026-04-16 -- Phase 02 execution started
 progress:
   total_phases: 6
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 7
+  completed_plans: 3
   percent: 100
 ---
 
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-15)
 
 **Core value:** Wer in Duesseldorf nach einem Waschsalon sucht, findet diesen -- online, auf Google Maps, in Social Media -- und bekommt sofort alle Infos die er braucht.
-**Current focus:** Phase 1 complete -- ready for Phase 2 (Website Launch)
+**Current focus:** Phase 02 — website-launch
 
 ## Current Position
 
-Phase: 1 of 6 (Domain, NAP & Coming Soon) -- COMPLETE
-Plan: 2 of 2 in current phase (all done)
-Status: Phase complete
-Last activity: 2026-03-15 -- Plan 01-02 complete (Coming-Soon pages with shader hero)
+Phase: 02 (website-launch) — EXECUTING
+Plan: 1 of 5
+Status: Executing Phase 02
+Last activity: 2026-04-16 -- Phase 02 execution started
 
 Progress: [##########] 100% (Phase 1)
 
@@ -52,6 +52,7 @@ Progress: [##########] 100% (Phase 1)
 - Trend: --
 
 *Updated after each plan completion*
+| Phase 02 P03 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -68,6 +69,8 @@ Recent decisions affecting current work:
 - [01-02]: Fullscreen Warp-Shader-Hintergrund statt statischem Design fuer visuelle Unterscheidung
 - [01-02]: Alle Infos above-the-fold in einer Fullscreen-Hero-Section konsolidiert
 - [01-02]: Teal/Cyan-Farbschema statt Original-Blau fuer freundlichere, markantere Optik
+- [Phase 02]: [02-03]: Impressum operator address is Heyestr. 152 (Laura Maskos natural person), NOT Münsterstr. 88 — Pitfall 3 guardrail
+- [Phase 02]: [02-03]: Datenschutz extended with Google Fonts self-hosted clause (Pitfall 7) + Videoüberwachung Art. 6 Abs. 1 lit. f with 72h deletion (Pitfall 8 / D-19)
 
 ### Pending Todos
 

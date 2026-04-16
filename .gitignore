@@ -31,3 +31,6 @@ pnpm-debug.log*
 .lighthouseci/
 lighthouserc.mobile.json
 
+
+# Local Netlify folder
+.netlify

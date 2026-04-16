@@ -3,9 +3,7 @@ import { useEffect, useState } from "react";
 
 function getShouldFallback(): boolean {
   if (typeof window === "undefined") return false;
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const narrow = window.matchMedia("(max-width: 640px)").matches;
-  return reduced || narrow;
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
 export default function WarpBackground() {
@@ -15,12 +13,9 @@ export default function WarpBackground() {
     const update = () => setFallback(getShouldFallback());
     update();
     const mqReduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const mqNarrow = window.matchMedia("(max-width: 640px)");
     mqReduced.addEventListener("change", update);
-    mqNarrow.addEventListener("change", update);
     return () => {
       mqReduced.removeEventListener("change", update);
-      mqNarrow.removeEventListener("change", update);
     };
   }, []);
 

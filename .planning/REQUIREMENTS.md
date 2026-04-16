@@ -10,12 +10,12 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Website
 
 - [x] **WEB-01**: Startseite mit Adresse, Öffnungszeiten und Preisliste
-- [ ] **WEB-02**: Kontaktinfo & Anfahrt mit Google Maps (Click-to-load, DSGVO-konform)
+- [x] **WEB-02**: Kontaktinfo & Anfahrt mit Google Maps (Click-to-load, DSGVO-konform)
 - [x] **WEB-03**: Impressum (rechtlich korrekt für gewerbliche Seite)
 - [x] **WEB-04**: Datenschutzerklärung (DSGVO-konform)
 - [x] **WEB-05**: Mobile-first responsives Design
-- [ ] **WEB-06**: LocalBusiness JSON-LD Schema Markup
-- [ ] **WEB-07**: SEO-Grundlagen (Meta Tags, Sitemap, robots.txt, self-hosted Fonts)
+- [x] **WEB-06**: LocalBusiness JSON-LD Schema Markup
+- [x] **WEB-07**: SEO-Grundlagen (Meta Tags, Sitemap, robots.txt, self-hosted Fonts)
 - [x] **WEB-08**: Coming-Soon-Seite vor Eröffnung (SEO-Vorlauf starten)
 - [ ] **WEB-09**: Fotogalerie des Salons (nach Einrichtung)
 - [x] **WEB-10**: FAQ-Bereich mit häufigen Fragen
@@ -72,12 +72,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | WEB-01 | Phase 2 | Complete |
-| WEB-02 | Phase 2 | Pending |
+| WEB-02 | Phase 2 | Complete |
 | WEB-03 | Phase 2 | Complete |
 | WEB-04 | Phase 2 | Complete |
 | WEB-05 | Phase 2 | Complete |
-| WEB-06 | Phase 2 | Pending |
-| WEB-07 | Phase 2 | Pending |
+| WEB-06 | Phase 2 | Complete |
+| WEB-07 | Phase 2 | Complete |
 | WEB-08 | Phase 1 | Complete |
 | WEB-09 | Phase 6 | Pending |
 | WEB-10 | Phase 2 | Complete |

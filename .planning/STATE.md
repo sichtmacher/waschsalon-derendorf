@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-02-PLAN.md (parallel wave 1)
-last_updated: "2026-04-16T13:44:22.178Z"
-last_activity: 2026-04-16 -- Phase 02 execution started
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-04-16T13:44:56.165Z"
+last_activity: 2026-04-16
 progress:
   total_phases: 6
   completed_phases: 1
   total_plans: 7
-  completed_plans: 4
+  completed_plans: 5
   percent: 100
 ---
 
@@ -26,9 +26,9 @@ See: .planning/PROJECT.md (updated 2026-03-15)
 ## Current Position
 
 Phase: 02 (website-launch) — EXECUTING
-Plan: 1 of 5
-Status: Executing Phase 02
-Last activity: 2026-04-16 -- Phase 02 execution started
+Plan: 2 of 5
+Status: Ready to execute
+Last activity: 2026-04-16
 
 Progress: [##########] 100% (Phase 1)
 
@@ -54,6 +54,7 @@ Progress: [##########] 100% (Phase 1)
 *Updated after each plan completion*
 | Phase 02 P03 | 2 | 2 tasks | 2 files |
 | Phase 02-website-launch P02 | 3min | 2 tasks | 7 files |
+| Phase 02-website-launch P01 | 5min | 3 tasks | 16 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,10 @@ Recent decisions affecting current work:
 - [Phase 02-website-launch]: [02-02]: Zero-hydration StickyNav via IntersectionObserver sentinel pattern (no Astro island)
 - [Phase 02-website-launch]: [02-02]: Native <details name='faq-group'> for single-open accordion behavior (zero JS state machine)
 - [Phase 02-website-launch]: [02-02]: Every German string copied verbatim from UI-SPEC Copywriting Contract — no paraphrasing, locked prices 5,00€/10,00€/1,80€
+- [Phase 02-01]: Playwright chromium-only install (no webkit/firefox) for minimal CI footprint
+- [Phase 02-01]: src/lib/schema.ts publishes signature-first contracts with throwing stubs; real impl deferred to 02-04
+- [Phase 02-01]: JSON-LD @type is LaundryService (not generic LocalBusiness) to enable laundry-specific rich results
+- [Phase 02-01]: Nyquist validation: 9 E2E specs authored RED in Wave 0 go GREEN as Waves 1-3 ship features
 
 ### Pending Todos
 
@@ -88,6 +93,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-16T13:44:22.175Z
-Stopped at: Completed 02-02-PLAN.md (parallel wave 1)
+Last session: 2026-04-16T13:44:48.804Z
+Stopped at: Completed 02-01-PLAN.md
 Resume file: None

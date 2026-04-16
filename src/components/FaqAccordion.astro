@@ -1,0 +1,58 @@
+---
+import { faqs, categoryLabels, type FaqCategory } from '../data/faq';
+
+const orderedCategories: FaqCategory[] = ['bedienung', 'preise', 'service'];
+const grouped: Record<FaqCategory, typeof faqs> = {
+  bedienung: [],
+  preise: [],
+  service: [],
+};
+for (const f of faqs) grouped[f.category].push(f);
+---
+
+<div class="space-y-10">
+  {orderedCategories.map((cat) => (
+    <div class="faq-group">
+      <h3
+        class="text-sm font-semibold uppercase tracking-wide mb-4"
+        style="color: var(--color-brand); font-family: var(--font-body), sans-serif;"
+      >
+        {categoryLabels[cat]}
+      </h3>
+      <div class="space-y-2">
+        {grouped[cat].map((f) => (
+          <details
+            name="faq-group"
+            class="faq-item group rounded-xl bg-white border overflow-hidden transition-colors"
+            style="border-color: rgba(0,0,0,0.06);"
+          >
+            <summary
+              class="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer list-none font-semibold text-base select-none"
+              style="color: var(--color-text); min-height: 44px;"
+            >
+              <span>{f.question}</span>
+              <svg class="faq-chevron shrink-0 transition-transform duration-200" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--color-text-muted);">
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-5 pt-0 leading-relaxed" style="color: var(--color-text);">
+              <p>{f.answer}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  /* Hide default disclosure triangle (Safari + Firefox) */
+  .faq-item > summary::-webkit-details-marker { display: none; }
+  .faq-item > summary::marker { content: ''; }
+  .faq-item[open] > summary > .faq-chevron { transform: rotate(180deg); color: var(--color-brand); }
+  .faq-item:hover { background-color: var(--color-surface); }
+  .faq-item:focus-within { outline: 2px solid var(--color-brand); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    .faq-chevron { transition: none !important; }
+  }
+</style>

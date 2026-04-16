@@ -1,0 +1,40 @@
+---
+// Sticky mini-nav that appears after the hero scrolls off screen.
+// Uses an IntersectionObserver sentinel — zero React, zero hydration cost.
+// Per D-04 (CONTEXT.md), shows 3 anchor links: Preise · FAQ · Kontakt.
+---
+
+<div data-sticky-sentinel aria-hidden="true" style="position:absolute;top:80vh;left:0;height:1px;width:1px;pointer-events:none;"></div>
+
+<nav
+  id="sticky-nav"
+  class="sticky top-0 z-40 opacity-0 pointer-events-none transition-opacity duration-200 border-b"
+  style="background: rgba(255,255,255,0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-color: rgba(0,0,0,0.06);"
+  aria-label="Seiten-Navigation"
+>
+  <ul class="flex gap-6 sm:gap-8 px-4 sm:px-6 py-3 max-w-6xl mx-auto justify-center md:justify-start">
+    <li><a href="#preise" class="text-sm font-semibold transition-colors" style="color: var(--color-text);">Preise</a></li>
+    <li><a href="#faq" class="text-sm font-semibold transition-colors" style="color: var(--color-text);">FAQ</a></li>
+    <li><a href="#kontakt" class="text-sm font-semibold transition-colors" style="color: var(--color-text);">Kontakt</a></li>
+  </ul>
+</nav>
+
+<script>
+  const sentinel = document.querySelector('[data-sticky-sentinel]');
+  const nav = document.getElementById('sticky-nav');
+  if (sentinel && nav) {
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          nav.classList.add('opacity-0', 'pointer-events-none');
+          nav.classList.remove('opacity-100', 'pointer-events-auto');
+        } else {
+          nav.classList.remove('opacity-0', 'pointer-events-none');
+          nav.classList.add('opacity-100', 'pointer-events-auto');
+        }
+      },
+      { rootMargin: '0px' }
+    );
+    io.observe(sentinel);
+  }
+</script>

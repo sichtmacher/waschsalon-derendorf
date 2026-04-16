@@ -43,7 +43,7 @@ const mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(address)}&out
     iframe.style.left = '0';
     iframe.allowFullscreen = true;
     iframe.loading = 'lazy';
-    iframe.referrerPolicy = 'no-referrer-when-downgrade';
+    iframe.referrerPolicy = 'no-referrer';
     container.innerHTML = '';
     container.appendChild(iframe);
   });

@@ -1,0 +1,64 @@
+---
+import PriceCard from '../PriceCard.astro';
+// Per D-15/D-16/D-17/D-18/D-19 and UI-SPEC Copywriting Contract lines 117-123:
+//   Card 1: 7 kg Waschmaschine — ab 5,00 € pro Waschgang
+//   Card 2: 15 kg Waschmaschine — ab 10,00 € pro Waschgang · amber "Für große Stücke" feature pill
+//   Card 3: Trockner 15 kg — 1,80 € pro 10 Minuten
+// Feature pills per UI-SPEC line 123: "Waschmittel vor Ort" · "Karte & Bar" · "WLAN"
+---
+
+<section
+  id="preise"
+  class="py-12 md:py-20 px-4"
+  style="background-color: #FFFFFF; scroll-margin-top: 4.5rem;"
+  aria-labelledby="preise-heading"
+>
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-10 md:mb-14">
+      <h2
+        id="preise-heading"
+        class="text-2xl md:text-[2rem] font-semibold mb-3"
+        style="color: var(--color-text); font-family: var(--font-heading), var(--font-body), sans-serif; line-height: 1.2;"
+      >
+        Preise
+      </h2>
+      <p class="text-base md:text-lg" style="color: var(--color-text-muted);">
+        Fair und transparent. Zahlung per Karte oder bar.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <PriceCard
+        title="7 kg Waschmaschine"
+        price="ab 5,00 €"
+        unit="pro Waschgang"
+        iconSlot="waesche"
+        features={[
+          { label: 'Waschmittel vor Ort' },
+          { label: 'Karte & Bar' },
+        ]}
+      />
+      <PriceCard
+        title="15 kg Waschmaschine"
+        price="ab 10,00 €"
+        unit="pro Waschgang"
+        iconSlot="waesche"
+        features={[
+          { label: 'Für große Stücke', highlighted: true },
+          { label: 'Waschmittel vor Ort' },
+          { label: 'Karte & Bar' },
+        ]}
+      />
+      <PriceCard
+        title="Trockner 15 kg"
+        price="1,80 €"
+        unit="pro 10 Minuten"
+        iconSlot="trockner"
+        features={[
+          { label: 'Karte & Bar' },
+          { label: 'WLAN' },
+        ]}
+      />
+    </div>
+  </div>
+</section>

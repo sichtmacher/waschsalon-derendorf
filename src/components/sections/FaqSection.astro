@@ -1,0 +1,29 @@
+---
+import FaqAccordion from '../FaqAccordion.astro';
+// Per D-12/D-13 and UI-SPEC Copywriting Contract lines 124-139.
+// 12 Q&A sourced from src/data/faq.ts via FaqAccordion.
+---
+
+<section
+  id="faq"
+  class="py-12 md:py-20 px-4"
+  style="background-color: var(--color-surface); scroll-margin-top: 4.5rem;"
+  aria-labelledby="faq-heading"
+>
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10 md:mb-14">
+      <h2
+        id="faq-heading"
+        class="text-2xl md:text-[2rem] font-semibold mb-3"
+        style="color: var(--color-text); font-family: var(--font-heading), var(--font-body), sans-serif; line-height: 1.2;"
+      >
+        Häufige Fragen
+      </h2>
+      <p class="text-base md:text-lg" style="color: var(--color-text-muted);">
+        Alles, was du vor deinem ersten Besuch wissen willst.
+      </p>
+    </div>
+
+    <FaqAccordion />
+  </div>
+</section>

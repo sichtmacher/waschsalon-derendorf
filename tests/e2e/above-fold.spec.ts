@@ -26,6 +26,6 @@ test.describe('Above-the-fold content @smoke', () => {
     const href = await cta.getAttribute('href');
     expect(href).toContain('google.com/maps');
     expect(decodeURIComponent(href!)).toContain('Münsterstr. 88');
-    expect(decodeURIComponent(href!)).toContain('40477');
+    expect(decodeURIComponent(href!)).toContain('40476');
   });
 });

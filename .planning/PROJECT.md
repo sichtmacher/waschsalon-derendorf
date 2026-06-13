@@ -35,7 +35,7 @@ Wer in Düsseldorf nach einem Waschsalon sucht, findet diesen — online, auf Go
 
 ## Context
 
-- **Standort:** Münsterstr. 88, 40477 Düsseldorf-Derendorf
+- **Standort:** Münsterstr. 88, 40476 Düsseldorf-Derendorf
 - **Konzept:** Klassischer SB-Waschsalon (Münz-/Kartenautomaten)
 - **Eröffnung:** In 3-6 Monaten (ca. September-Dezember 2026)
 - **Zielgruppe:** Breiter Mix — Studenten (FH-Nähe), Anwohner, Familien, Singles

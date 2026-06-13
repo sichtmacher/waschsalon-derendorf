@@ -9,7 +9,7 @@ test.describe('JSON-LD structured data', () => {
     expect(business).toBeDefined();
     expect(business['@type']).toBe('LaundryService');
     expect(business.address?.streetAddress).toBe('Münsterstr. 88');
-    expect(business.address?.postalCode).toBe('40477');
+    expect(business.address?.postalCode).toBe('40476');
     expect(business.address?.addressLocality).toBe('Düsseldorf');
     expect(business.address?.addressCountry).toBe('DE');
     expect(business.telephone).toBe('+49 211 54202673');

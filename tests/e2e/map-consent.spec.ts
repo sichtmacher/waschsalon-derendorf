@@ -14,6 +14,6 @@ test('loads iframe on click', async ({ page }) => {
   await expect(iframe).toHaveCount(1);
   const src = await iframe.getAttribute('src');
   // iframe src is URL-encoded via encodeURIComponent — decode before asserting
-  // that the destination address is preserved (Münsterstr. 88, 40477 Düsseldorf).
+  // that the destination address is preserved (Münsterstr. 88, 40476 Düsseldorf).
   expect(decodeURIComponent(src ?? '')).toContain('Münsterstr');
 });
